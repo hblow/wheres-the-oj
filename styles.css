@@ -16,7 +16,7 @@ html, body {
     margin-bottom: 15px;
     width: 800px;
 }
-.unit, .blank, .ui {
+.units, .blank, .ui {
     display: inline-block;
     width: 112px;
     height: 112px;
