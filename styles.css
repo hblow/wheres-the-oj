@@ -1,0 +1,58 @@
+html, body {
+    background-color: #282828;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#characterSelectionScreen {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 1400px;
+}
+#title {
+    margin-bottom: 15px;
+    width: 800px;
+}
+.unit, .blank, .ui {
+    display: inline-block;
+    width: 112px;
+    height: 112px;
+    margin: 12px;
+}
+.row {
+    margin-top: -50px;
+}
+.noMatch, .blank {
+    opacity: 0.25;
+    filter: alpha(opacity=25); /* msie */
+}
+#search {
+    display: block;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 100%;
+    background: #fff;
+    padding-left: 40px;
+    border-radius: 20px;
+    outline: none !important;
+    box-sizing: border-box;
+}
+#searchbox {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+#searchbox .searchIconImage {
+    height: 24px;
+    position: absolute;
+    transform: rotate(8deg);
+    left: 8px;
+    top: 8px;
+}
