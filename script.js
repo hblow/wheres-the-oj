@@ -1,18 +1,18 @@
 $(document).ready(function() {
-    const $grid = $("#character-grid");
+    const $grid = $("#characterGrid");
     const itemsPerRow = 9;
 
     for (let i = 0; i <= characters.length; i += itemsPerRow) {
-        const row = $('<div>').addClass('Row').addClass(i === 0 ? 'row0' : '');
+        const row = $('<div>').addClass('row').addClass(i === 0 ? 'row0' : '');
         const rowItems = characters.slice(i, i + itemsPerRow);
 
         rowItems.forEach(item => {
-            const $div = $('<div>').addClass(item.Type);
-            if (item.class) $div.addClass(item.Class);
+            const $div = $('<div>').addClass(item.type);
+            if (item.class) $div.addClass(item.class);
 
             if (item.type === "blank") {
                 $div.append('<img src="unit/blank.png"/>');
-            } else if (item.Type === "ui" && item.link) {
+            } else if (item.type === "ui" && item.link) {
                 $div.append(`<a href="${item.link}"><img src="${item.src}"/></a>`);
             } else {
                 $div.append(`<img src="${item.src}" title="${item.Name}"/>`);
